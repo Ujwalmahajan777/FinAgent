@@ -1,0 +1,9 @@
+fastapi
+streamlit
+requests
+uuid
+langchain
+langchain-community
+langchain-openai
+python-dotenv
+pymongo
