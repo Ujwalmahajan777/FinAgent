@@ -1,54 +1,66 @@
+
 FinAgent
-FinAgent is an agentic, autonomous financial intelligence system, designed to demonstrate real-world AI. It is suitable for anyone interested in AI, tech, or autonomous systems.
+FinAgent is an agentic, autonomous financial intelligence system, built for anyone interested in AI, tech, and real-world automation.
 
 🧠 How FinAgent Works: Agentic Workflow
-Below is a workflow diagram showing how FinAgent automates financial analysis and decision-making.
-![FinAgent Workflow](https://drive.google.com/file/d/1czSsVaLJ2hWAwixDMiEtsPQTehPB-Mhg/view?usp=drive_link)
+See a visual workflow of FinAgent’s mechanism here:
+FinAgent Agentic Workflow (Google Drive)
 
+Project Functionality (Explained via Workflow)
 User Interaction:
-
-A user submits a query (e.g., add expense, get goal status, fetch stock price, search web).
+Users interact via a web UI or API, submitting natural language queries (like adding expenses, setting goals, checking stock info, or web searches).
 
 Agent Core:
 
-The system uses LangChain and LangGraph for agentic reasoning: it interprets the query, classifies the task, and autonomously selects the best resource.
+Implemented using LangChain and LangGraph for reasoning and workflow orchestration.
 
-Resource Selection & Execution:
+The agent interprets the query, classifies the task, and autonomously selects the correct tool/resource.
 
-For expense and goal management, it uses MongoDB to store, retrieve, and process transactions or goals.
+Task Routing and Resource Usage:
 
-To fetch live stock information (price/news), it uses external APIs—yFinance and AlphaVantage API for market data.
+Expense & Goal Management:
+Uses MongoDB for secure, persistent storage and queries.
 
-Web search queries utilize a prebuilt tool—Serper.dev API—to fetch real-time information, news, and trending topics.
+Stock Market Data:
+Fetches real-time prices/news via yFinance and AlphaVantage APIs.
+
+Web Search:
+Utilizes the Serper.dev API to search for trending news and information.
+
+Agentic Decider:
+The agent selects and orchestrates these tools dynamically—no hardcoded logic.
 
 Results Handling:
 
-The agent integrates responses, formats them, and presents actionable insights or answers back to the user.
+The agent collects responses, formats them, and delivers user-friendly results via the interface.
 
 🛠 Technology Mapping
 Task Type	Tech Used	What It Does
-Expense/Goal	MongoDB (database)	Logs, updates, queries transactions and user goals.
-Stock Data	yFinance/AlphaVantage	Calls APIs to fetch real-time price, news, analytics.
-Web Search	Serper.dev API	Fetches latest news, trending web content.
-Agent Core	LangChain/LangGraph	Autonomous reasoning, decision-making, workflow orchestration.
-UI/API	Streamlit, FastAPI	Chat/web interface, exposes endpoints for user interaction.
+Expense/Goal Mgmt	MongoDB	Stores, retrieves, and summarizes transactions/goals
+Stock Data	yFinance / AlphaVantage	Calls API for real-time market info
+Web Search	Serper.dev API (prebuilt tool)	Gets latest news, answers, or trending content
+Agentic Core	LangChain, LangGraph	Orchestrates reasoning, logic, and tool selection
+User Interaction	Streamlit, FastAPI	Chat & API interfaces for easy access
 🌟 What Makes FinAgent Special
-Agentic Intelligence: The core agent autonomously selects and orchestrates tools—custom or prebuilt—according to user goals, context, and system state.
+Agentic Intelligence:
+The system is not just a set of functions—it’s an autonomous agent that understands user intent and orchestrates tools as needed.
 
-Dynamic & Extensible: Modular design lets you add new tools or APIs. The agent adapts, routing tasks and data without hardcoding each function.
+Flexible & Extensible:
+Easily integrate additional tools or APIs with minimal changes.
 
-Real-World Utility: Covers financial tracking, goal-setting, market analysis, and live information retrieval—all integrated into one AI-driven system.
+Real Utility:
+Automates typical financial activities and live data retrieval in one AI-driven package.
 
 ⚡ Quickstart
-Clone and install requirements:
+Clone and install dependencies:
 
 bash
 git clone https://github.com/YOUR_USERNAME/finagent.git
 cd finagent
 pip install -r requirements.txt
-Configure environment variables (.env for keys)
+Add configuration for API keys in a .env file
 
-Run the interface:
+Start the interface:
 
 bash
 streamlit run streamlit.py
@@ -56,5 +68,5 @@ or
 
 bash
 uvicorn main:app --reload
-🤝 Contributing 
-Open to everyone; fork, branch, and make a pull request.
+🤝 Contributing & License
+Open to all contributors; fork, branch, and send a PR.
