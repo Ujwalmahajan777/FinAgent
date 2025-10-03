@@ -4,7 +4,7 @@ FinAgent is an agentic, autonomous financial intelligence system, built for anyo
 
 🧠 How FinAgent Works: Agentic Workflow
 See a visual workflow of FinAgent’s mechanism here:
-FinAgent Agentic Workflow (Google Drive)
+FinAgent Agentic Workflow ([Google Drive](https://drive.google.com/file/d/1czSsVaLJ2hWAwixDMiEtsPQTehPB-Mhg/view?usp=drive_link))
 
 Project Functionality (Explained via Workflow)
 User Interaction:
