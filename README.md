@@ -3,7 +3,7 @@ FinAgent is an agentic, autonomous financial intelligence system, designed to de
 
 🧠 How FinAgent Works: Agentic Workflow
 Below is a workflow diagram showing how FinAgent automates financial analysis and decision-making.
-![FinAgent Workflow](Gemini_Generated_Image_6tro Functionality—Step by Step
+![FinAgent Workflow](https://drive.google.com/file/d/1czSsVaLJ2hWAwixDMiEtsPQTehPB-Mhg/view?usp=drive_link)
 
 User Interaction:
 
