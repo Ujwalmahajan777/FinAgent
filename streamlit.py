@@ -36,7 +36,7 @@ st.subheader("💬 Chat with FinVoice")
 
 def stream_response(prompt):
     response = requests.post(
-        "http://localhost:8000/chat",
+        "https://finagent-nw1v.onrender.com/docs#/",
         json={
             "input": prompt,
             "session_id": st.session_state["session_id"]
