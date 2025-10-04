@@ -9,7 +9,7 @@ from typing import TypedDict, Annotated
 from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage, AIMessage
 from langchain_openai import ChatOpenAI
-from langgraph.checkpoint.sqlite import SqliteSaver
+
 from langgraph.checkpoint.mongodb import MongoDBSaver
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
@@ -26,7 +26,7 @@ load_dotenv()
 # -------------------
 # 1. LLM with Tools
 # -------------------
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+llm = ChatOpenAI(model="gpt-5-2025-08-07", temperature=0)
 
 # Create tools list and bind to LLM
 tools = [add_expense_tool, query_expenses_tool, expense_summary_tool, add_goal_tool,generate_spending_feedback,get_stock_price,search_with_serper]
