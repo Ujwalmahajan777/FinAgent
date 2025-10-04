@@ -9,4 +9,6 @@ python-dotenv
 pymongo
 uvicorn
 langgraph
+yfinance
+langgraph-checkpoint-mongodb
 
