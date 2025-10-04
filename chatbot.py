@@ -1,9 +1,8 @@
 # chatbot.py - Fixed version with proper tool binding
-import speech_recognition as sr
+
 import tempfile
 import os
-import sqlite3
-from gtts import gTTS
+
 import pygame
 from typing import TypedDict, Annotated
 
