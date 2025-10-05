@@ -12,7 +12,7 @@ if "message_history" not in st.session_state:
 st.set_page_config(page_title="FinAgent: AI Financial Assistant", page_icon="💸", layout="wide")
 
 # --- HEADER ---
-st.title("FinVoice 💸")
+st.title("FinAgent 💸")
 st.markdown("#### Your personal AI-powered financial assistant for tracking expenses, setting goals, and smart money insights!")
 
 # --- SIDEBAR ---
