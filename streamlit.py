@@ -9,7 +9,7 @@ if "session_id" not in st.session_state:
 if "message_history" not in st.session_state:
     st.session_state["message_history"] = []
 
-st.set_page_config(page_title="FinVoice: AI Financial Assistant", page_icon="💸", layout="wide")
+st.set_page_config(page_title="FinAgent: AI Financial Assistant", page_icon="💸", layout="wide")
 
 # --- HEADER ---
 st.title("FinVoice 💸")
@@ -32,7 +32,7 @@ with st.sidebar:
 
 # --- CHAT INTERFACE ---
 st.divider()
-st.subheader("💬 Chat with FinVoice")
+st.subheader("💬 Chat with FinAgent")
 
 def stream_response(prompt):
     response = requests.post(
